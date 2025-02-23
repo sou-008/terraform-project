@@ -1,5 +1,4 @@
-# terraform-project
-Flask and Express Deployment on a Single EC2 Instance using Terraform
+# terraform-project [Flask and Express Deployment on a Single EC2 Instance using Terraform]
 
 # Project Overview
 This project demonstrates how to deploy both a Flask backend and an Express frontend on a single Amazon EC2 instance using Terraform. The goal is to provision an EC2 instance, install the necessary dependencies, and run both applications on different ports (Flask on port 5000 and Express on port 3000).
