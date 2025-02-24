@@ -37,10 +37,10 @@ This file outputs the EC2 instance's public IP once the deployment is complete, 
 This script is executed when the EC2 instance is launched. It installs all necessary dependencies, clones the Flask and Express applications, and starts both apps on separate ports.
 
 **This script does the following**
-    Installs the required dependencies (python3, nodejs, git, Flask, and Express).
-    Clones the Flask and Express applications from GitHub (ensure to replace with your own repos).
-    Installs any required dependencies for both Flask (pip3 install -r requirements.txt) and Express (npm install).
-    Starts the Flask backend on port 5000 and the Express frontend on port 3000.
+- Installs the required dependencies (python3, nodejs, git, Flask, and Express).
+- Clones the Flask and Express applications from GitHub (ensure to replace with your own repos).
+- Installs any required dependencies for both Flask (pip3 install -r requirements.txt) and Express (npm install).
+- Starts the Flask backend on port 5000 and the Express frontend on port 3000.
 
 **Steps to Deploy**
 1. Set Up AWS CLI and Terraform
@@ -49,14 +49,14 @@ This script is executed when the EC2 instance is launched. It installs all neces
     <br>Ensure your SSH key is available to use for the EC2 instance.
      
 2. Initialize Terraform
-`terraform init`
+- `terraform init`
 
 3. Review the Deployment Plan
-`terraform plan`
+- `terraform plan`
 
 4. Apply the Terraform Configuration
-`terraform apply`
-Type yes when prompted to confirm the deployment.
+- `terraform apply`
+<br>Type yes when prompted to confirm the deployment.
     
 5. Access the Application
 Once the deployment is complete, Terraform will output the public IP of the EC2 instance. Use this IP to access your applications:
@@ -69,7 +69,7 @@ Once the deployment is complete, Terraform will output the public IP of the EC2 
 
 ## Clean Up
 To remove the resources created by Terraform:
-`terraform destroy`
+- `terraform destroy`
 **This will tear down the EC2 instance and other associated resources.**
 
 ## Conclusion
