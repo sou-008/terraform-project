@@ -11,12 +11,12 @@ This project demonstrates how to deploy both a Flask backend and an Express fron
     SSH Key: An SSH key pair created in the AWS region you're deploying the EC2 instance in (to access the EC2 instance).
 
 /terraform-project
-│
-├── main.tf            # Main Terraform configuration
-├── variables.tf       # Terraform variables
-├── outputs.tf         # Terraform outputs
-├── user_data.sh       # User data script for EC2 instance
-├── README.md          # Project readme
+<br>│
+<br>├── main.tf            # Main Terraform configuration
+<br>├── variables.tf       # Terraform variables
+<br>├── outputs.tf         # Terraform outputs
+<br>├── user_data.sh       # User data script for EC2 instance
+<br>├── README.md          # Project readme
 
 ## Terraform Configuration Files
 
