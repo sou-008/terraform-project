@@ -59,9 +59,9 @@ This script is executed when the EC2 instance is launched. It installs all neces
 Type yes when prompted to confirm the deployment.
     
 5. Access the Application
-    Once the deployment is complete, Terraform will output the public IP of the EC2 instance. Use this IP to access your applications:
-    Flask Application: http://<instance-public-ip>:5000
-    Express Application: http://<instance-public-ip>:3000
+Once the deployment is complete, Terraform will output the public IP of the EC2 instance. Use this IP to access your applications:
+Flask Application: http://<instance-public-ip>:5000
+Express Application: http://<instance-public-ip>:3000
 
 ## Troubleshooting
     Ensure that your EC2 instance's security group allows inbound traffic on ports 5000 and 3000.
