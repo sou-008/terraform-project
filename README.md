@@ -20,20 +20,20 @@ This project demonstrates how to deploy both a Flask backend and an Express fron
 
 ## Terraform Configuration Files
 
-1. main.tf - Terraform Configuration
+1. `main.tf` - Terraform Configuration
 This file contains the main configuration for provisioning the EC2 instance. It includes:
 
 Defining the AWS provider and region.
 Provisioning an EC2 instance with the required configurations.
 Attaching a user data script to install dependencies and start both the Flask and Express applications.
 
-2. variables.tf - Terraform Variables
+2. `variables.tf` - Terraform Variables
 This file contains all the variables used in the main.tf configuration. It's designed for reusability and scalability.
 
-3. outputs.tf - Terraform Outputs
+3. `outputs.tf` - Terraform Outputs
 This file outputs the EC2 instance's public IP once the deployment is complete, allowing easy access to your application.
 
-4. EC2 User Data Script (user_data.sh)
+4. EC2 User Data Script (`user_data.sh`)
 This script is executed when the EC2 instance is launched. It installs all necessary dependencies, clones the Flask and Express applications, and starts both apps on separate ports.
 
 **This script does the following**
@@ -49,13 +49,13 @@ This script is executed when the EC2 instance is launched. It installs all neces
     Ensure your SSH key is available to use for the EC2 instance.
      
 2. Initialize Terraform
-    terraform init
+`terraform init`
 
 3. Review the Deployment Plan
-    terraform plan
+`terraform plan`
 
 4. Apply the Terraform Configuration
-    terraform apply
+`terraform apply`
 Type yes when prompted to confirm the deployment.
     
 5. Access the Application
@@ -70,7 +70,7 @@ If you face issues with dependencies, check the application logs or verify if th
 
 ## Clean Up
 To remove the resources created by Terraform:
-terraform destroy
+`terraform destroy`
 **This will tear down the EC2 instance and other associated resources.**
 
 ## Conclusion
