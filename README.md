@@ -43,21 +43,25 @@ This script is executed when the EC2 instance is launched. It installs all neces
     Starts the Flask backend on port 5000 and the Express frontend on port 3000.
 
 **Steps to Deploy**
-    Step 1: Set Up AWS CLI and Terraform
-        Install and configure the AWS CLI (aws configure).
-        Install Terraform if you haven't already.
-        Ensure your SSH key is available to use for the EC2 instance.
-     Step 2: Initialize Terraform
-        terraform init
-    Step 3: Review the Deployment Plan
-        terraform plan
-    Step 4: Apply the Terraform Configuration
-        terraform apply
-        Type yes when prompted to confirm the deployment.
-    Step 5: Access the Application
-        Once the deployment is complete, Terraform will output the public IP of the EC2 instance. Use this IP to access your applications:
-        Flask Application: http://<instance-public-ip>:5000
-        Express Application: http://<instance-public-ip>:3000
+1. Set Up AWS CLI and Terraform
+    Install and configure the AWS CLI (aws configure).
+    Install Terraform if you haven't already.
+    Ensure your SSH key is available to use for the EC2 instance.
+     
+2. Initialize Terraform
+    terraform init
+
+3. Review the Deployment Plan
+    terraform plan
+
+4. Apply the Terraform Configuration
+    terraform apply
+Type yes when prompted to confirm the deployment.
+    
+5. Access the Application
+    Once the deployment is complete, Terraform will output the public IP of the EC2 instance. Use this IP to access your applications:
+    Flask Application: http://<instance-public-ip>:5000
+    Express Application: http://<instance-public-ip>:3000
 
 ## Troubleshooting
     Ensure that your EC2 instance's security group allows inbound traffic on ports 5000 and 3000.
